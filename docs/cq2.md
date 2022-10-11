@@ -7,7 +7,7 @@ Amazon Web Services (AWS) has several data centers which have multiple processor
 The net power consumption of a cluster of `k` processors (`i`,`i+1`,…,`i+k−1`) is defined as:
 
 <p align="center">
-  <img src="assets/cq2-1.png">
+  <img src="../assets/cq2-1.png">
 </p>
 
 That is, *net power consumption* = *maximum booting power* among the `k` processors + (*sum of processing power of processors*) * `k`.
@@ -60,5 +60,5 @@ Net Power Consumption = 6 + 6 * 3 = 24
 ```
 
 <p align="center">
-  <img src="assets/cq2-2.png">
+  <img src="../assets/cq2-2.png">
 </p>

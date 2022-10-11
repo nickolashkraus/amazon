@@ -14,4 +14,4 @@ For each multiple of 3, print "Fizz" instead of the number. For each multiple of
 
 **Solution**
 
-See [`fizz_buzz.go`](pkg/fizz_buzz.go).
+See [`fizz_buzz.go`](../pkg/fizz_buzz.go).
