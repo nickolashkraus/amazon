@@ -9,15 +9,19 @@ Solutions for the code assessment and technical interview
 ### Coding Assessment Demo
 
 #### Problem 1
+
 What is the difference between `<span>` and `<div>`?
 
 **Solution**
+
 The `<span>` HTML tag is an inline container, whereas the `<div>` HTML tag defines a division or block in an HTML document.
 
 #### Problem 2
+
 For each multiple of 3, print "Fizz" instead of the number. For each multiple of 5, print "Buzz" instead of the number. For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 
 **Solution**
+
 See `fizz_buzz.go`.
 
 ### Coding Assessment
@@ -116,7 +120,7 @@ The net power consumption of a cluster of `k` processors (`i`,`i+1`,…,`i+k−1
   <img src="assets/cq2-1.png">
 </p>
 
-That is, *net power consumption* = *maximum booting power* among the `k` processors + (*sum of processing power of processors*) ∗ `k`.
+That is, *net power consumption* = *maximum booting power* among the `k` processors + (*sum of processing power of processors*) * `k`.
 
 A cluster of processors is said to be *sustainable* if its *net power consumption* does not exceed a given threshold value `powerMax`.
 
@@ -125,7 +129,7 @@ Given the booting power consumption and the processing power consumption of `n` 
 Here,
 * Maximum booting power = max(3, 6, 1) = 6
 * Sum of processing powers = 2 + 1 + 3 = 6
-* Thus, net power consumption = 6 + 6 ∗ 3 = 24 ≤ powerMax
+* Thus, net power consumption = 6 + 6 * 3 = 24 ≤ powerMax
 
 Thus, we can group `k=3` processors to form a *sustainable* cluster. Note that the minimum power consumption to form a cluster of `k=4` processors is 46, by forming a cluster of the first 4 processors. Since this cost is greater than the threshold, we cannot form a cluster with 4 processors. The maximum possible cluster size is 3.
 
@@ -155,14 +159,14 @@ processing Power = [2, 1, 3, 4, 5]
 powerMax = 25
 ```
 
-If `k=2`, any adjacent pair can be chosen. The highest usage is the pair `[4,5]` with net power consumption `4+(4+5)∗2=22`. Next, try `k=3`. Group the first 3 processors together as:
+If `k=2`, any adjacent pair can be chosen. The highest usage is the pair `[4,5]` with net power consumption 4+(4+5)*2=22. Next, try `k=3`. Group the first 3 processors together as:
 
 ```
 Maximum Power = 25
 Cluster of 3 processors
 Maximum booting power = 6
 Sum of processing power = 6
-Net Power Consumption = 6 + 6 ∗ 3 = 24
+Net Power Consumption = 6 + 6 * 3 = 24
 ```
 
 <p align="center">
