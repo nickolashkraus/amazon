@@ -44,8 +44,8 @@ Complete the function `findMaximumSustainableClusterSize` in the editor below.
 **Example**
 
 ```
+processingPower = [2, 1, 3, 4, 5]
 bootingPower = [3, 6, 1, 3, 4]
-processing Power = [2, 1, 3, 4, 5]
 powerMax = 25
 ```
 
@@ -62,3 +62,25 @@ Net Power Consumption = 6 + 6 * 3 = 24
 <p align="center">
   <img src="../assets/cq2-2.png">
 </p>
+
+## Solution
+
+This problem can be approached as a sliding window problem given the constraint:
+
+>Clusters can only be formed of processors located adjacent to each other.
+
+Therefore, starting at index zero, the window is adjusted such that the maximum cluster is formed when the following criteria is met:
+
+```
+net power consumption = maximum booting power + (sum of processing power) * k
+```
+
+where net power consumption ≤ max power (`powerMax`).
+
+This approach is suboptimal, since it uses a double nested loop. That is, the time complexity is `O(n^2)`.
+
+Instead, this problem can be solved in linear time (`O(n)`) using a monotonic queue (or monotone priority queue), a variant of a priority queue in which the priorities of extracted items are required to form a monotonic sequence (i.e. for all `n ∈ N` a<sub>n+1</sub> ≥ a<sub>n</sub> for monotonically increasing and a<sub>n+1</sub> ≤ a<sub>n</sub> for monotonically decreasing).
+
+The monotonic queue is created using a deque (pronounced *deck*), for which elements can be added to or removed from either the front (head) or back (tail) in constant (`O(1)`) time.
+
+The application of the monotonic queue is used to maintain the maximum booting power of the current group of processors. If we did not use this data structure, the maximum booting power would need to be calculated for each window, thus necessitating the double nested loop of the naive solution.
