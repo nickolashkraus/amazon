@@ -1,4 +1,4 @@
-module github.com/NickolasHKraus/amazon
+module github.com/nickolashkraus/amazon
 
 go 1.18
 
