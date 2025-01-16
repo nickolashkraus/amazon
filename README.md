@@ -1,8 +1,11 @@
 # [Amazon](https://www.amazon.com)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/nickolashkraus/amazon/blob/master/LICENSE)
+**Date**: April 26th, 2022
+**Format**: Online Assessment
 
-Solutions for the code assessment and technical interview
+Solutions for the code assessment
+
+---
 
 ## Online Technical Assessment
 
