@@ -1,9 +1,9 @@
 # [Amazon](https://www.amazon.com)
 
-**Date**: April 26th, 2022
-**Format**: Online Assessment
+* **Date**: April 26th, 2022
+* **Format**: Online Assessment
 
-Solutions for the code assessment
+Solutions for the online assessment
 
 ---
 
